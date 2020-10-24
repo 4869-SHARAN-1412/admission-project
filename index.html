@@ -1,4 +1,4 @@
-<!doctype html>
+<   !doctype html>
 <html lang="en">
 
 <head>
@@ -31,9 +31,13 @@
     .nav-background {
       background-color: forestgreen;
     }
-    @media (max-width: 500px){
-      .setting{
-      background-size: 100% 100%;
+    @media (max-width: 430px){
+      .footer1{
+        font-size:x-small;
+      
+      }
+      .heading{
+        font-size: 20px;
       }
       
     }
@@ -41,7 +45,7 @@
     #white-text {
       color: honeydew;
       font-family: 'Lobster', cursive;
-      font-size: xx-large;
+      font-size:x-large;
     }
 
     .footer {
@@ -101,6 +105,7 @@
       margin-left: 10px;
       margin-right: 10px;
       padding-bottom: 20px;
+      padding-right: 0px;
     }
 
     .details {
@@ -147,7 +152,7 @@
 
     <!-- <img src="logocllge.jpg" alt="Logo"> -->
 
-    <a class="navbar-brand" id="white-text" href="#">HitamAdmissionPage</a>
+    <a class="navbar-brand title" id="white-text" href="#">HitamAdmissionPage</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -588,7 +593,7 @@
               </div>
             </div>
             <br/>
-            <div class="form-group col file container" style="margin-right: 10px; margin-left: 10px;">
+            <div class="form-group col file">
               <label for="exampleFormControlFile3">Bonafide</label>
               <input type="file"  id="exampleFormControlFile3" name="bonafide" required>
               <div class="invalid-feedback">
@@ -624,12 +629,12 @@
   </article>
   </br>
   
-  <footer class="footer setting"
+  <footer class="footer footer1 setting"
     style="background-image:url(https://thumbs.gfycat.com/LeanDismalAlaskanmalamute-size_restricted.gif); background-size: 100% 100%;">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3><u>Developers</u></h3>
+          <h3 class="heading"><u>Developers</u></h3>
           <aside>Developed by Hitam College Students</aside>
           <ul>
             <li>Sharan</li>
@@ -642,7 +647,7 @@
 
         <div class="col container" align="right">
           <div align="right" style="text-align: left; padding-left: 80px;">
-            <h3><u>Contact Us</u></h3>
+            <h3 class="heading"><u>Contact Us</u></h3>
 
             <a href="http://www.hitam.org/contactus.html" target="_blank" alt="link" style="color:rgb(34, 32, 32)">
               Hitam College</a><br />
