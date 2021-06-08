@@ -1,0 +1,157 @@
+.img {
+    border-color: honeydew;
+  }
+
+
+  .body-background {
+    background-color: greenyellow;
+  }
+  /* .image-resize { 
+    height:auto;
+    width:100%;
+  object-fit: cover;
+  object-position: center center;
+  margin-right: 0px;
+} */
+
+  .nav-background {
+    background-color: forestgreen;
+  }
+  @media (max-width: 430px){
+    .footer1{
+      font-size:x-small;
+    
+    }
+    .heading{
+      font-size: 20px;
+    }
+    
+  }
+
+  #alert{
+    text-align: center;
+    padding:10px;
+    background:limegreen;
+    color:white;
+    margin-bottom:10px;
+    display:none;
+  }
+
+
+  .loader{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 10px solid;
+      border-color: #00ff87 #00422357;
+      animation: 1.5s spin infinite;
+  }
+  @keyframes spin {
+      to{
+          transform: rotate(360deg);
+      }
+      
+  }
+
+  #white-text {
+    color: honeydew;
+    font-family: 'Lobster', cursive;
+    font-size:x-large;
+  }
+
+  .footer {
+    /* background-size: contain; */
+    font-family: 'Sansita Swashed', cursive;
+
+  }
+
+  .font2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+  }
+
+  .gender {
+    padding-top: 20px;
+    background-color: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .borders {
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 5px 10px black;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+  }
+
+  .bread {
+    font-family: 'Sansita Swashed', cursive;
+  }
+
+
+  .dob {
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .file{
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+  }
+
+  .details {
+    padding-left: 10px;
+    background-color: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .bordercard {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 38px;
+    padding-left: 30px;
+    background-color: brown;
+  }
+
+  .caro {
+    /* background-image:url(https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Sliding-Diagonals-Background-Effect-HTML-CSS.gif) ; */
+    background-size: contain;
+  }
+
+  .test {
+    text-align: right;
+  }
+
+  .inside {
+    background-color: lightgreen;
+  }
+
+  .font1 {
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+  }

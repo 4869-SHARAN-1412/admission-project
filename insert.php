@@ -55,17 +55,7 @@ if($run){
 else{
 	echo"<strong>Form not submitted</strong>.<hr>";
 }
-/*$SELECT="SELECT* from details where firstname=$firstname";
-$display=mysqli_query($conn,$SELECT) or die(mysqli_error($conn));
-$output=mysqli_fetch_assoc($display);
-echo $output['*'];
 
-if($display){
-	echo "Diaplaying.<br>";	
-}
-else{
-	echo"Error.<br>";
-}*/
 
 
 $filename=$_FILES["10thcertificate"]["name"];
@@ -111,34 +101,14 @@ else{
 
 
 }
-/*$stmt=$conn->prepare($INSERT);
-$stmt->bind_param("ssssssisiissssssssssssiiii",$firstname,$lastname,$fathername,$mothername,$cityname,$statename,$zipnumber,$Emailaddress,$phonenumber1,$phonenumber2,
-$branchname,$gendersex,$nation,$caste,$addr1,$addr2,$birth,$passyear,$sname,$sboard,$cname,$cboard,$cgpatenth,$cgpatwelvhth,$eamcet,$jee);
-$stmt->execute();*/
 
-/*$image1=addslashes($_FILES['10thcertificate']['tmp_name']);
-$images=file_get_contents($image1);
-$img=base64_decode($images);
-
-$image2=addslashes($_FILES['12thcertificate']['tmp_name']);
-$img2=file_get_contents($image2);
-$ima=base64_decode($img2);
-
-$image3=addslashes($_FILES['bonafide']['tmp_name']);
-$img3=file_get_contents($image3);
-$ime=base64_decode($img3);
-
-$query=mysqli_query($conn,"insert into details(10thcertificate,12thcertificate,bonafide)values('$img','$ima','$ime')") or die("query error");*/
-
-//echo "new record inserted successfully";
-//$stmt->close();
-/*if($conn->query($INSERT)==True)
-{
-	echo"data is inserted";
+if($run){
+	$msg="New Student Details Entered into Database\n Please Check the Database if all details have been stored and check Student Certificates in certificates folder.\n Thank You.\n Yours faithfullyly\n -HitamAdmissionPage "
+	mail("sharanhitam@gmail.com","New Entry",$msg);
 }
 else{
-	echo"data is not inserted";
-}*/
+	echo "Data Collected and Stored But confirmation mail could'nt be sent Contact Administration Department. ";
+}
 
 $conn->close();
 
