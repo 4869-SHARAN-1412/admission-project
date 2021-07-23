@@ -7,18 +7,48 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
     <style>
+
+@media (max-width: 430px){
+    .back{
+      padding-top: 0px 10px 0px 10px;
+
+      height: 30%;
+      width:80%;
+    }
+    .backimg{
+      background-size: cover;
+    }
+    .mark{
+      margin:10px;
+      padding: 50px;
+      size: 2px;
+    }
+  }
         .back{
        background-color:lightcyan;
         padding-top: 50px;
         border-radius: 10px;    
-        margin-top: 260px;
+        margin-top: 300px;
         margin-bottom: 100px;
         border: 2px solid black;
         box-shadow: 2px 5px 8px black ;}
         .backimg{
           background-image: url(https://u.a7.org/pictures/748/748206.jpg);
-          background-size: 100% 100%;}
+          background-size: cover;
+        }
+        .mark{
+          background-color: honeydew;
+          color:green;
+         padding:10px;
+          border-radius: 50px;
+          font-family: 'STIX Two Math', serif;
+          text-align: center;
+
+        }
 
     </style>
     <title>Hitcam Radio</title>
@@ -32,7 +62,7 @@
   <body class="backimg">
       <center>
     <div class="back container" style="background-image: url(https://www.xmple.com/wallpaper/red-linear-gradient-1920x1080-c2-ffa07a-dc143c-a-225-f-14.svg); background-size: 100% 100%;">
-        <h4 style="color:yellowgreen;"><strong>Hyderabad Institute Of Technology and Management-Hitcam Radio</strong><img src="hiticon.png" style="border-radius: 30px;" alt="..."></h4><br/>
+        <h4  class="mark" style="color:rgb(18, 175, 26);"><strong>Hyderabad Institute Of Technology and Management-Hitcam Radio</strong><img src="hiticon.png" style="border-radius: 30px;" alt="..."></h4><br/>
         <iframe src="https://radio.younify.com/public/campus-23092-hyderabad/embed" frameborder="0"  allowtransparency="true" style="width: 80%; min-height:60px; border: 0; background-color: white; margin-bottom: 20px; border-radius: 40px; padding:40px 20px 0px 10px;");></iframe>
     </div>
     </center>

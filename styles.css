@@ -19,8 +19,28 @@
     .heading{
       font-size: 20px;
     }
+    .files{
+      padding-right: 50px;
+    }
+    .devtitle{
+      font-size: 12px;
+    }
+    
+    .nav-item{
+      position: relative;
+      text-align: center; 
+    }
+    .dropdown-item{
+      position:relative;
+      left: 25%;
+    }
     
   }
+
+
+
+
+
 
   #alert{
     text-align: center;
@@ -144,7 +164,12 @@
   .inside {
     background-color: lightgreen;
   }
-
+ .navmargin1{
+  text-align: left;
+ }
+ .navmargin2{
+   text-align: right;
+ }
   .font1 {
     font-family: 'PT Serif', serif;
     font-size: 35px;

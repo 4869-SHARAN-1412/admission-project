@@ -35,9 +35,10 @@ function submitForm(e) {
   var phonenumber = getInputval('phonenumber');
   var alternatephonenumber = getInputval('alternatephonenumber');
   var streambranch = getInputval('stream/branch');
-  var male = getInputval('male');
-  var female = getInputval('female');
-  var other = getInputval('other');
+  var reasonforbranch = getInputval('reasonforbranch');
+  var Gender = getInputval('Gender');
+  //var female = getInputval('female');
+  //var other = getInputval('other');
   var nationality = getInputval('nationality');
   var community = getInputval('community');
   var HomeAddress1 = getInputval('HomeAddress1');
@@ -56,7 +57,7 @@ function submitForm(e) {
   //var certificatefile12th = getInputval('12thcertificatefile');
   //var bonafidefile = getInputval('bonafidefile');
 
-  saveMessage(studentfirstname, studentlastname, fatherguardianfullname, motherguardianfullname, city, state, zip, emailaddress, phonenumber, alternatephonenumber, streambranch, male, female, other, nationality, community, HomeAddress1, HomeAddress2, DOB, passingmonthyearof12th, schoolname10th, schoolboard10th, collegename12th, collegeboard12th, cgpa10th, cgpa12th, eamcetrankscore, jeemainrankscorepercentage);
+  saveMessage(studentfirstname, studentlastname, fatherguardianfullname, motherguardianfullname, city, state, zip, emailaddress, phonenumber, alternatephonenumber, streambranch, reasonforbranch, Gender, nationality, community, HomeAddress1, HomeAddress2, DOB, passingmonthyearof12th, schoolname10th, schoolboard10th, collegename12th, collegeboard12th, cgpa10th, cgpa12th, eamcetrankscore, jeemainrankscorepercentage);
 
   //show alert
   document.getElementById('alert').style.display='block';
@@ -64,7 +65,7 @@ function submitForm(e) {
   //hide alert after 3secs
   setTimeout(function(){
     document.getElementById('alert').style.display = 'none'; 
-   },5000);
+   },7000);
 
    //clearform
    document.getElementById('admissionform').reset();
@@ -78,7 +79,7 @@ function getInputval(id) {
 
 
 //function to save the message to firebase
-function saveMessage(studentfirstname, studentlastname, fatherguardianfullname, motherguardianfullname, city, state, zip, emailaddress, phonenumber, alternatephonenumber, streambranch, male, female, other, nationality, community, HomeAddress1, HomeAddress2, DOB, passingmonthyearof12th, schoolname10th, schoolboard10th, collegename12th, collegeboard12th, cgpa10th, cgpa12th, eamcetrankscore, jeemainrankscorepercentage) {
+function saveMessage(studentfirstname, studentlastname, fatherguardianfullname, motherguardianfullname, city, state, zip, emailaddress, phonenumber, alternatephonenumber, streambranch, reasonforbranch, Gender, nationality, community, HomeAddress1, HomeAddress2, DOB, passingmonthyearof12th, schoolname10th, schoolboard10th, collegename12th, collegeboard12th, cgpa10th, cgpa12th, eamcetrankscore, jeemainrankscorepercentage) {
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     studentfirstname: studentfirstname,
@@ -92,9 +93,11 @@ function saveMessage(studentfirstname, studentlastname, fatherguardianfullname, 
     phonenumber: phonenumber,
     alternatephonenumber: alternatephonenumber,
     streambranch: streambranch,
-    male: male,
-    female: female,
-    other: other,
+    reasonforbranch: reasonforbranch,
+    Gender:Gender,
+    //male: male,
+    //female: female,
+    //other: other,
     nationality: nationality,
     community: community,
     HomeAddress1: HomeAddress1,
