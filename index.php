@@ -483,7 +483,7 @@
           <br />
           <div class="row">
             <div class="form-group col file ">
-              <label for="10thcertificatefile">10th Certificate</label>
+              <label for="10thcertificatefile">10th Certificate(Optional)</label>
               <input type="file" class="form-control-file" id="10thcertificatefile" name="10thcertificate">
               <div class="invalid-feedback">
                 Please enter this field.
@@ -491,7 +491,7 @@
             </div>
             <br />
             <div class="form-group col file ">
-              <label for="12thcertificatefile">12th Certificate</label>
+              <label for="12thcertificatefile">12th Certificate(Optional)</label>
               <input type="file" id="12thcertificatefile" name="12thcertificate">
               <div class="invalid-feedback">
                 Please enter this field.
@@ -499,7 +499,7 @@
             </div>
             <br />
             <div class="form-group col file">
-              <label for="bonafidefile">Bonafide</label>
+              <label for="bonafidefile">Bonafide(Optional)</label>
               <input type="file" id="bonafidefile" name="bonafide">
               <div class="invalid-feedback">
                 Please enter this field.
